@@ -1,0 +1,19 @@
+Input Image (32×32×3)
+        │
+Conv2D (32 Filters)
+        │
+ReLU
+        │
+MaxPooling
+        │
+Conv2D (64 Filters)
+        │
+ReLU
+        │
+MaxPooling
+        │
+Flatten
+        │
+Dense (128)
+        │
+Softmax Output
