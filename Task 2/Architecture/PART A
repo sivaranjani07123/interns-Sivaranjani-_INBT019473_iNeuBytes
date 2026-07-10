@@ -1,0 +1,24 @@
+IMDB Dataset
+      │
+      ▼
+Text Cleaning
+      │
+      ▼
+Tokenization
+      │
+      ▼
+Stopword Removal
+      │
+      ▼
+TF-IDF Vectorizer
+      │
+      ▼
+Train-Test Split
+      │
+      ├───────────────┐
+      ▼               ▼
+Logistic Regression   SVM
+      │               │
+      └───────┬───────┘
+              ▼
+      Performance Evaluation
