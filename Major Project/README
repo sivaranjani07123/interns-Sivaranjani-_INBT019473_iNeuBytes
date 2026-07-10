@@ -1,0 +1,148 @@
+# 🎬 Movie Recommendation System
+A Flask-based Movie Recommendation System developed as the Major Project for the **iNeuBytes AI/ML Internship**.
+The application recommends similar movies based on the movie selected by the user using **Content-Based Filtering**, **TF-IDF Vectorization**, and **Cosine Similarity**.
+---
+## Features
+- Content-Based Movie Recommendation
+- Simple and User-Friendly Interface
+- Fast Recommendation Generation
+- Error Handling for Invalid Movie Names
+- REST API using Flask
+- Deployed on Render
+---
+## Technologies Used
+- Python
+- Flask
+- Pandas
+- Scikit-learn
+- Joblib
+- HTML
+- CSS
+- JavaScript
+---
+## Dataset
+Dataset: MovieLens Movies Dataset
+Source:
+https://grouplens.org/datasets/movielens/
+Dataset File:
+```
+dataset/movies.csv
+```
+---
+## Project Structure
+```
+Movie-Recommendation-System/
+│
+├── app.py
+├── train_model.py
+├── requirements.txt
+├── README.md
+├── movies.pkl
+├── genre_matrix.pkl
+├── vectorizer.pkl
+│
+├── dataset/
+│   └── movies.csv
+│
+├── templates/
+│   └── index.html
+│
+└── static/
+    ├── style.css
+    └── script.js
+```
+---
+## Machine Learning Model
+This project uses a **Content-Based Recommendation System**.
+### Steps
+1. Load the MovieLens dataset.
+2. Clean the movie genre information.
+3. Convert genres into numerical vectors using TF-IDF Vectorizer.
+4. Calculate similarity between movies using Cosine Similarity.
+5. Recommend the Top 5 most similar movies.
+---
+## Installation
+Clone the repository
+```bash
+git clone https://github.com/sivaranjani07123/Movie-Recommendation-System.git
+```
+Move into the project folder
+```bash
+cd Movie-Recommendation-System
+```
+Install dependencies
+```bash
+pip install -r requirements.txt
+```
+Run the training script
+```bash
+python train_model.py
+```
+Run the Flask application
+```bash
+python app.py
+```
+Open
+```
+http://127.0.0.1:5000
+```
+---
+## API Endpoints
+### Home Page
+```
+GET /
+```
+---
+### Health Check
+```
+GET /health
+```
+Response
+```json
+{
+    "status":"OK"
+}
+```
+---
+### Movie Recommendation
+```
+POST /recommend
+```
+Example Request
+```json
+{
+    "movie":"Avatar"
+}
+```
+Example Response
+```json
+{
+    "recommendations":[
+        "Superman Returns",
+        "Man of Steel",
+        "X-Men: Days of Future Past",
+        "Jupiter Ascending",
+        "The Wolverine"
+    ]
+}
+```
+---
+## Deployment
+Live Application
+https://movie-recommendation-system-3rfq.onrender.com
+---
+## GitHub Repository
+https://github.com/sivaranjani07123/Movie-Recommendation-System
+---
+## Future Enhancements
+- Search Suggestions
+- Movie Posters
+- IMDb Ratings
+- User Login
+- Personalized Recommendations
+- Hybrid Recommendation System
+---
+## Author
+**S. Sivaranjani**
+Artificial Intelligence and Machine Learning (AIML)
+iNeuBytes AI/ML Internship – Major Project
