@@ -1,0 +1,22 @@
+Input Review
+      │
+      ▼
+Tokenizer
+      │
+      ▼
+Padding
+      │
+      ▼
+Embedding Layer
+      │
+      ▼
+LSTM Layer
+      │
+      ▼
+Dropout
+      │
+      ▼
+Dense Layer
+      │
+      ▼
+Sigmoid Output
