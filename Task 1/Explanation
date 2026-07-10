@@ -1,0 +1,5 @@
+Why Customized CNN Performed Better?
+*The Customized CNN achieved better performance because it contains additional convolutional layers, batch normalization, and dropout layers. 
+*These improvements allow the network to learn more discriminative image features while reducing overfitting. 
+*Batch normalization stabilizes and speeds up training, whereas dropout improves generalization by preventing the model from relying too heavily on individual neurons. 
+*As a result, the Customized CNN obtained higher accuracy, precision, recall, and F1-score than the Traditional CNN.
